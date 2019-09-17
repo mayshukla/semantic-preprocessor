@@ -1,6 +1,6 @@
-# pre
+# Semantic Preprocessor
 
-Pre (pronounced like "free") is a semantic preprocessor for plain text files.
+This is a semantic preprocessor for plain text files.
 It can represent hiearchies of macros.
 
 It is meant to be used in conjuction with some sort of typesetting system.
