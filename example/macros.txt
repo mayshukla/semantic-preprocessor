@@ -1,18 +1,19 @@
-name Ryan Shukla
+name John Doe
 
 1 Experience
 
-1.2 University of Alberta SMR
-1.2.dates May 2018 - present
-1.2.title autonomy team lead
+1.2 Job 2
+1.2.dates May 2019 - present
+1.2.title Developer
 1.2.bullets.1 Wrote code
-1.2.bullets.2 Presented at conference
+1.2.bullets.2 Broke code
+1.2.bullets.3 Fixed code
 
-1.1 SPEAR
-1.1.dates May 2018 - present
-1.1.title autonomy team lead
+1.1 Job 1
+1.1.dates May 2018 - Aug 2018
+1.1.title Team Lead
 1.1.bullets.1 Wrote code
-1.1.bullets.2 Went to competition
+1.1.bullets.2 Tested code
 1.1.bullets.3 Delegated work
 
 2 Skills
