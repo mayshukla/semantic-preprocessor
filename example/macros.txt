@@ -1,0 +1,18 @@
+name Ryan Shukla
+
+1 Experience
+
+1.2 University of Alberta SMR
+1.2.dates May 2018 - present
+1.2.title autonomy team lead
+1.2.bullets.1 Wrote code
+1.2.bullets.2 Presented at conference
+
+1.1 SPEAR
+1.1.dates May 2018 - present
+1.1.title autonomy team lead
+1.1.bullets.1 Wrote code
+1.1.bullets.2 Went to competition
+1.1.bullets.3 Delegated work
+
+2 Skills

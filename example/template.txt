@@ -1,0 +1,21 @@
+<h1>{name}</h1>
+
+{for category in ""}
+
+<h2>{category}</h2>
+
+{if title}
+<p>Title: {category.title}</p>
+{endif}
+
+{if dates}
+<p>Dates: {category.dates}</p>
+{endif}
+
+<ul>
+  {for bullet in "category.bullets"}
+  <li>{bullet}</li>
+  {endfor}
+</ul>
+
+{endfor}
