@@ -6,7 +6,6 @@ class MacroNode():
         self.value = value
         self.children = {}
 
-
     def __hash__(self):
         return self.value.__hash__()
 
@@ -21,8 +20,11 @@ class MacroNode():
     def insert(self, macro_name, value):
         self.children[macro_name] = MacroNode(value)
 
-    def find(self, macro_name):
-        return self.children[macro_name].value
+    def find_child(self, macro_name):
+        return self.children[macro_name]
+
+    def find_value(self, macro_name):
+        return self.find_child(macro_name).value
 
 
 def parse_macro_file(filename):
@@ -59,7 +61,7 @@ def main():
 
     macros = parse_macro_file(args["macros"])
     print(macros)
-    print(macros.find("name"))
+    print(macros.find_value("name"))
 
 
 if __name__ == "__main__":
