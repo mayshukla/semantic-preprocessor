@@ -35,6 +35,9 @@ class MacroNode():
     def find_value(self, macro_name):
         return self.find_child(macro_name).value
 
+    def get_value(self):
+        return self.value
+
     def set_value(self, value):
         self.value = value
 
@@ -69,6 +72,25 @@ class MacroTree():
             # When we are done traversing the macro tree, insert the value
             if i == len(macro_path) - 1:
                 current_macro_node.set_value(value)
+
+    def find(self, qual_macro_name):
+        """
+        Returns the value corresponding to a given fully-qualified macro name (e.g. "1.2.3")
+        Returns None if macro doesn't exist or has no value
+        """
+
+        # Split up qualified macro name by level
+        macro_path = qual_macro_name.split(".")
+
+        current_macro_node = self.top_level_map
+        for i in range(len(macro_path)):
+            key = macro_path[i]
+            if key in current_macro_node.children:
+                current_macro_node = current_macro_node.find_child(key)
+                if i == len(macro_path) - 1:
+                    return current_macro_node.get_value()
+            else:
+                return None
 
 
 def parse_macro_file(filename):
@@ -105,6 +127,12 @@ def main():
 
     macros = parse_macro_file(args["macros"])
     print(macros)
+    print(macros.find("name"))
+    print(macros.find("1"))
+    print(macros.find("1.1"))
+    print(macros.find("1.1.foo"))
+    print(macros.find("1.1.dates"))
+    print(macros.find("1.2.dates"))
 
 
 if __name__ == "__main__":
