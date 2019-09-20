@@ -1,2 +1,3 @@
+* implement MacroTree.find_value()
 * implement parser for templating syntax
 * specify format for multi-line macros
