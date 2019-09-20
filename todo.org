@@ -1,0 +1,2 @@
+* implement parser for templating syntax
+* specify format for multi-line macros
